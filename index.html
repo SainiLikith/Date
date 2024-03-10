@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+    <div id="ti">
+        <button id="tryIt" value="true">NO</button>
+    </div>
+    <div id="ays">
+        <button id="ayss" value="true">NO</button>
+    </div>
+    <h1>
+        Would you like to go out on a date with me sometime?"
+    </h1>
+    <div id="main">
+
+        <button id="yes" value="true" >YES</button>
+        <button id="NO" value="true">NO</button>
+    </div>
+
+
+    <div>
+        <button id="Plg" value="true">NO</button>
+    </div>
+
+    <div id="dlg">
+        <button id="dlgs" value="true">Still No</button>
+    </div>
+
+</body>
+<script>
+
+    const yes = document.querySelector("#yes");
+    const no = document.querySelector("#NO");
+    const dlgs = document.querySelector("#dlgs");
+    const tryIt = document.querySelector("#tryIt");
+    const ayss = document.querySelector("#ayss");
+    const Plg = document.querySelector("#Plg");
+
+    no.addEventListener("click", ((e) => {
+        e.preventDefault()
+        noValue = no.value;
+        if (noValue) {
+            no.style.display = "none";
+            ayss.style.display = "block";
+        }
+    }))
+
+    ayss.addEventListener("click", ((e) => {
+        e.preventDefault()
+        ayssValue = ayss.value;
+
+        if (ayssValue) {
+            ayss.style.display = "none";
+            Plg.style.display = "block";
+        }
+    }))
+    Plg.addEventListener("click", ((e) => {
+        e.preventDefault()
+        plgValue = Plg.value;
+        // console.log(Plg);
+        if (plgValue) {
+            Plg.style.display = "none";
+            tryIt.style.display = "block";
+        }
+    }))
+    tryIt.addEventListener("click", ((e) => {
+        e.preventDefault()
+        tryItValue = tryIt.value;
+        // console.log(Plg);
+        if (tryItValue) {
+            tryIt.style.display = "none";
+            dlgs.style.display = "block";
+        }
+    }))
+    dlgs.addEventListener("click", ((e) => {
+        e.preventDefault();
+        dlgsValue = dlgs.value;
+        if (dlgsValue) {
+            alert("Bye Girl");
+        }
+    }))
+
+    yes.addEventListener("click", ((e) => {
+        e.preventDefault();
+        yesValue = yes.value;
+        if(yesValue){
+            alert("let's go ping meeeee")
+        }
+    }))
+</script>
+
+</html>

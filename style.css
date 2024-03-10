@@ -1,0 +1,62 @@
+*{
+padding: 0;
+margin: 0;
+background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fcute-black-background-j12nniloqx70mwbh.jpg&f=1&nofb=1&ipt=3b2c1bcd47606e5b387cbb226165562d536ef704d8b537b5b9a99ee10ad9458c&ipo=images");
+
+}
+#main{
+display: flex;
+justify-content: center;
+padding: 70px 20px 0 50px;
+color: white;
+background: transparent;
+}
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+button{ 
+    width: 150px;
+    border-radius: 20%;
+    height: 50px;
+    font-size: 1rem;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+    color: white;
+    background: transparent;
+    
+}
+button:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+#ayss{
+    padding: 0 20px;
+    margin: 20px;
+    display: flex;
+    align-content: end;
+    display: none;
+}
+#Plg{
+   justify-content: end;
+    display: none;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+#dlgs{
+    /* padding-left: 20px; */
+    display: flex;
+    justify-content: end;
+    display: none;
+}
+#tryIt{
+margin-left: 50px;
+margin-top: 50px; 
+display: none;
+}
+#main button{
+    margin: 90px;
+}
